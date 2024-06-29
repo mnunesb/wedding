@@ -22,18 +22,8 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 button {
   border-radius: 8px;
@@ -65,4 +55,49 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    width: 100vw;
+}
+#hero{
+  position: relative;
+  display: inline-block;
+  height: 90vh;
+  overflow: hidden;
+  border: 2px red solid;
+}
+
+#hero img {
+ max-width: 100%;
+ height: 100%;
+}
+
+#hero h1 {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed to move text higher or lower */
+  left: 50%;
+  transform: translateX(-50%); /* Center the text horizontally */
+  margin: 0;
+  color: white; /* Change text color for better contrast */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: add background for better readability */
+  padding: 5px 10px; /* Optional: add padding around the text */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+#gifts{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid green;
+  width: 80vw;
+  justify-content: space-between;
+}
 }
